@@ -1,0 +1,8 @@
+{
+  "name": "A Paz do Diabo — Landing Page",
+  "description": "Página de vendas oficial do livro e estudo bíblico digital A Paz do Diabo. Um estudo sobre as batalhas da alma e a confiança real em Deus.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,14 +1,11 @@
 import React from "react";
 import { ArrowRight, BookOpen } from "lucide-react";
 import { CHECKOUT_URL, IMAGES } from "../data";
+import { FireSparksEffect } from "./FireSparksEffect";
 
 export const HeroSection: React.FC = () => {
   return (
-    <section className="relative overflow-hidden pt-12 pb-24 md:pt-20 md:pb-32 lg:pt-24 lg:pb-36 bg-[#08090B]">
-      {/* Background ambient lighting */}
-      <div className="pointer-events-none absolute top-10 left-1/2 -translate-x-1/2 w-[700px] h-[700px] rounded-full bg-[#D9AD62]/10 blur-[140px] opacity-70" />
-      <div className="pointer-events-none absolute -top-20 right-10 w-[500px] h-[500px] rounded-full bg-[#521F2B]/20 blur-[130px]" />
-
+    <section className="relative pt-12 pb-16 md:pt-20 md:pb-24 lg:pt-24 lg:pb-28 bg-transparent">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
           
@@ -24,16 +21,42 @@ export const HeroSection: React.FC = () => {
 
             {/* Subheadline */}
             <p className="text-lg sm:text-xl text-[#A5A7AD] font-light leading-relaxed max-w-xl">
-              Descubra por que nem toda tranquilidade é sinal de paz verdadeira —
-              e aprofunde sua compreensão sobre as batalhas da alma e a
-              confiança em Deus.
+              Descubra se a sua tranquilidade está firmada em Cristo ou em uma falsa sensação de segurança.
             </p>
+
+            {/* Key transformation points */}
+            <div className="mt-6 space-y-3 max-w-xl text-left">
+              <div className="flex items-start gap-3">
+                <span className="shrink-0 text-base" aria-hidden="true">✅</span>
+                <p className="text-sm sm:text-base text-[#F7F4EF]/95 font-medium leading-snug">
+                  Identifique a falsa paz espiritual e volte seus olhos para Cristo.
+                </p>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="shrink-0 text-base" aria-hidden="true">✅</span>
+                <p className="text-sm sm:text-base text-[#F7F4EF]/95 font-medium leading-snug">
+                  Reconheça e enfrente pequenos pecados antes que se tornem grandes prisões.
+                </p>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="shrink-0 text-base" aria-hidden="true">✅</span>
+                <p className="text-sm sm:text-base text-[#F7F4EF]/95 font-medium leading-snug">
+                  Aprenda a confiar em Deus nos momentos de solidão e fraqueza.
+                </p>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="shrink-0 text-base" aria-hidden="true">✅</span>
+                <p className="text-sm sm:text-base text-[#F7F4EF]/95 font-medium leading-snug">
+                  Desenvolva coragem para obedecer a Deus e viver a sua fé.
+                </p>
+              </div>
+            </div>
           </div>
 
-          {/* Right / Visual Carrier */}
+          {/* Right / Visual Carrier with Fire & Sparks */}
           <div className="lg:col-span-5 relative flex flex-col justify-center items-center">
-            {/* Golden radiance halo behind character */}
-            <div className="absolute w-[360px] h-[360px] sm:w-[480px] sm:h-[480px] rounded-full bg-radial from-[#F0C77C]/25 via-[#D9AD62]/10 to-transparent blur-[80px] pointer-events-none" />
+            {/* Visual Fire & Sparks Effect behind book/figure */}
+            <FireSparksEffect />
 
             <div className="relative z-10 w-full flex justify-center">
               {/* Clean image without borders, frames, or boxes */}
@@ -41,7 +64,7 @@ export const HeroSection: React.FC = () => {
                 src={IMAGES.hero}
                 alt="Figura contemplativa iluminada por luz dourada, simbolizando as batalhas interiores da alma"
                 referrerPolicy="no-referrer"
-                className="w-full max-w-[340px] sm:max-w-[400px] lg:max-w-[440px] h-auto object-contain drop-shadow-[0_25px_60px_rgba(0,0,0,0.9)]"
+                className="w-full max-w-[340px] sm:max-w-[400px] lg:max-w-[440px] h-auto object-contain drop-shadow-[0_25px_60px_rgba(0,0,0,0.95)]"
               />
             </div>
 
@@ -51,7 +74,7 @@ export const HeroSection: React.FC = () => {
                 href={CHECKOUT_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#D9AD62] via-[#F0C77C] to-[#D9AD62] px-6 py-2.5 sm:py-3 text-xs sm:text-sm font-bold text-[#08090B] tracking-wide shadow-sm hover:shadow-[0_4px_20px_rgba(217,173,98,0.35)] hover:scale-[1.01] active:scale-[0.99] transition-all duration-200 group text-center"
+                className="w-full inline-flex items-center justify-center gap-2 rounded-full btn-3d-gold px-7 py-3.5 text-xs sm:text-sm font-black tracking-wide text-[#08090B] group text-center cursor-pointer"
               >
                 <span>Quero descobrir a paz que vem de Deus.</span>
                 <ArrowRight className="w-4 h-4 shrink-0 transition-transform duration-200 group-hover:translate-x-1" />

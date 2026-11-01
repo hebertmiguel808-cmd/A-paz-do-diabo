@@ -4,7 +4,7 @@ import { Gift, ArrowRight } from "lucide-react";
 
 export const BonusSection: React.FC = () => {
   return (
-    <section id="bonus" className="relative py-24 md:py-36 bg-[#08090B] overflow-hidden">
+    <section id="bonus" className="relative py-24 md:py-36 bg-transparent overflow-hidden">
       {/* Background ambient lighting */}
       <div className="pointer-events-none absolute top-1/3 left-1/2 -translate-x-1/2 w-[700px] h-[700px] rounded-full bg-[#E5A823]/6 blur-[190px]" />
 
@@ -54,7 +54,7 @@ export const BonusSection: React.FC = () => {
                         src={bonus.image}
                         alt={bonus.title}
                         referrerPolicy="no-referrer"
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-contain p-1"
                       />
                     </div>
                   </div>
@@ -94,7 +94,7 @@ export const BonusSection: React.FC = () => {
             href={CHECKOUT_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-3 rounded-full bg-gradient-to-r from-[#D9AD62] via-[#F0C77C] to-[#D9AD62] px-10 py-5 text-base sm:text-lg font-extrabold text-[#08090B] tracking-wide shadow-[0_12px_45px_rgba(217,173,98,0.45)] hover:shadow-[0_16px_55px_rgba(240,199,124,0.6)] hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 group"
+            className="inline-flex items-center justify-center gap-3 rounded-full btn-3d-gold px-10 py-5 text-base sm:text-lg font-black tracking-wide text-[#08090B] group cursor-pointer"
           >
             <span>QUERO MEU LIVRO + OS 5 BÔNUS</span>
             <ArrowRight className="w-5 h-5 transition-transform duration-200 group-hover:translate-x-1" />

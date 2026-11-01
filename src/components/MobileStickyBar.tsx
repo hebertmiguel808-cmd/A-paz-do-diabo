@@ -37,7 +37,7 @@ export const MobileStickyBar: React.FC = () => {
           href={CHECKOUT_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center justify-center gap-1.5 rounded-full bg-gradient-to-r from-[#D9AD62] to-[#F0C77C] px-5 py-2.5 text-xs font-bold text-[#08090B] tracking-wide shadow-md whitespace-nowrap shrink-0 active:scale-95 transition-transform"
+          className="inline-flex items-center justify-center gap-1.5 rounded-full btn-3d-gold px-5 py-2.5 text-xs font-black text-[#08090B] tracking-wide whitespace-nowrap shrink-0 cursor-pointer"
         >
           <span>QUERO MEU LIVRO</span>
           <ArrowRight className="w-3.5 h-3.5" />

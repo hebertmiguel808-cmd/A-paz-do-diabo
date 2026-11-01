@@ -1,137 +1,99 @@
 import React from "react";
-import { CONTRASTS } from "../data";
-import { AlertCircle, CheckCircle2, ArrowRightLeft } from "lucide-react";
+import { Sparkles, CheckCircle2 } from "lucide-react";
+
+const LEARNING_ITEMS = [
+  {
+    number: "01",
+    text: "Como identificar uma falsa paz espiritual",
+  },
+  {
+    number: "02",
+    text: "Por que os “pequenos pecados” podem se tornar grandes prisões",
+  },
+  {
+    number: "03",
+    text: "Como parar de olhar apenas para si mesmo e voltar os olhos para Cristo",
+  },
+  {
+    number: "04",
+    text: "Como confiar em Deus mesmo nos momentos de solidão e fraqueza",
+  },
+  {
+    number: "05",
+    text: "Como desenvolver coragem para obedecer a Deus",
+  },
+  {
+    number: "06",
+    text: "Como reconhecer e enfrentar um pecado que está sendo tolerado",
+  },
+  {
+    number: "07",
+    text: "E muito mais!!",
+  },
+];
 
 export const ContrastSection: React.FC = () => {
   return (
-    <section id="contraste" className="relative py-24 md:py-32 bg-[#08090B] overflow-hidden">
-      {/* Background visual duality: Subtle ambient warmth, fully seamless with page */}
-      <div className="pointer-events-none absolute -left-40 top-1/2 -translate-y-1/2 w-[550px] h-[550px] rounded-full bg-[#521F2B]/10 blur-[180px]" />
-      <div className="pointer-events-none absolute -right-40 top-1/2 -translate-y-1/2 w-[550px] h-[550px] rounded-full bg-[#D9AD62]/8 blur-[180px]" />
+    <section id="aprender" className="relative py-24 md:py-36 bg-transparent">
+      {/* Background ambient lighting */}
+      <div className="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] rounded-full bg-[#D9AD62]/6 blur-[190px]" />
 
-      <div className="mx-auto max-w-7xl px-6 lg:px-8 relative z-10">
+      <div className="mx-auto max-w-4xl px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-14 lg:mb-16">
-          <div className="inline-flex items-center gap-2 text-xs font-semibold tracking-[0.2em] uppercase text-[#D9AD62] mb-4">
-            <ArrowRightLeft className="w-3.5 h-3.5 text-[#D9AD62]" />
-            <span>O Crivo do Discernimento</span>
+        <div className="text-center max-w-3xl mx-auto mb-14 sm:mb-16">
+          <div className="inline-flex items-center gap-2 text-xs font-semibold tracking-[0.22em] uppercase text-[#D9AD62] mb-4">
+            <Sparkles className="w-4 h-4 text-[#D9AD62]" />
+            <span>Conteúdo Programático & Transformação</span>
           </div>
 
-          <h2 className="font-editorial text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#F7F4EF] leading-tight mb-6">
-            DUAS FORMAS DE ENTENDER A PAZ.{" "}
-            <span className="gold-gradient-text block mt-1">
-              UMA REFLEXÃO QUE PODE MUDAR SUA PERSPECTIVA.
-            </span>
+          <h2 className="font-editorial text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-[#F7F4EF] leading-tight mb-6">
+            O QUE VOCÊ VAI{" "}
+            <span className="gold-gradient-text">APRENDER</span>
           </h2>
 
-          <p className="text-base sm:text-lg text-[#A5A7AD] font-light leading-relaxed">
-            Aprenda a distinguir a calmaria frágil produzida pela acomodação
-            humana da paz soberana gerada pelo Espírito Santo.
+          <p className="text-base sm:text-lg text-[#A5A7AD] font-light leading-relaxed max-w-2xl mx-auto">
+            Uma jornada bíblica estruturada para despertar a sua alma, desarmar armadilhas silenciosas e edificar a verdadeira paz em Cristo.
           </p>
         </div>
 
-        {/* Dual Atmosphere Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 items-stretch">
+        {/* Bloco Único com os 7 Pontos e Números Sobressalentes Livres do Quadradinho */}
+        <div className="relative rounded-[32px] p-8 sm:p-12 lg:p-14 bg-gradient-to-b from-[#13151D]/90 via-[#101217]/90 to-[#0A0C0F]/90 border border-[#191B21] shadow-2xl">
           
-          {/* Left Column: A FALSA PAZ */}
-          <div className="rounded-[32px] p-8 sm:p-10 border border-[#521F2B]/40 bg-gradient-to-b from-[#111318] to-[#0D0F14] shadow-2xl relative overflow-hidden">
-            {/* Top ambient wine glow */}
-            <div className="absolute top-0 right-0 w-48 h-48 bg-[#521F2B]/20 rounded-full blur-[80px] pointer-events-none" />
+          {/* Subtle Ambient Flare inside block */}
+          <div className="pointer-events-none absolute top-0 right-10 w-64 h-64 bg-[#D9AD62]/10 rounded-full blur-[90px]" />
 
-            <div className="relative z-10">
-              <div className="flex items-center justify-between gap-4 mb-6 pb-2">
-                <div>
-                  <span className="text-[11px] font-semibold tracking-[0.2em] uppercase text-[#A5A7AD]/70 block mb-1">
-                    Atmosfera Fria & Superficial
+          {/* List of 7 points */}
+          <div className="space-y-6 sm:space-y-8 relative z-10">
+            {LEARNING_ITEMS.map((item) => (
+              <div
+                key={item.number}
+                className="flex items-center gap-5 sm:gap-8 pb-6 sm:pb-7 border-b border-[#191B21]/80 last:border-b-0 last:pb-0 group"
+              >
+                {/* Número Grande, Sobressalente e Destacado sem quadradinho */}
+                <div className="shrink-0 w-14 sm:w-20 text-left">
+                  <span className="font-editorial text-4xl sm:text-5xl lg:text-6xl font-black gold-gradient-text tracking-tighter block select-none drop-shadow-[0_4px_20px_rgba(217,173,98,0.4)] group-hover:scale-110 group-hover:drop-shadow-[0_6px_28px_rgba(240,199,124,0.65)] transition-all duration-300">
+                    {item.number}
                   </span>
-                  <h3 className="font-editorial text-2xl sm:text-3xl font-bold text-[#F7F4EF]">
-                    A FALSA PAZ
-                  </h3>
                 </div>
-                <div className="p-3 rounded-2xl bg-[#08090B] border border-[#521F2B]/50 text-[#F7F4EF]">
-                  <AlertCircle className="w-6 h-6 text-[#A5A7AD]" />
+
+                {/* Texto do Ponto */}
+                <div className="flex-1">
+                  <p className="font-editorial text-lg sm:text-xl lg:text-2xl font-bold text-[#F7F4EF] group-hover:text-[#F0C77C] transition-colors leading-snug sm:leading-relaxed">
+                    {item.text}
+                  </p>
                 </div>
               </div>
-
-              <p className="text-sm text-[#A5A7AD] leading-relaxed mb-8">
-                Uma sensação efêmera de tranquilidade que anestesia o discernimento
-                e foge de qualquer autoexame diante da soberania divina.
-              </p>
-
-              <div className="space-y-6">
-                {CONTRASTS.falsePeace.map((item, idx) => (
-                  <div
-                    key={idx}
-                    className="p-5 rounded-2xl bg-[#08090B]/60 border border-[#191B21] hover:border-[#521F2B]/60 transition-colors"
-                  >
-                    <div className="flex items-start gap-3">
-                      <span className="text-[#A5A7AD] mt-1 shrink-0 font-mono text-xs">
-                        ✕
-                      </span>
-                      <div>
-                        <h4 className="text-base font-semibold text-[#F7F4EF] mb-1">
-                          {item.title}
-                        </h4>
-                        <p className="text-sm text-[#A5A7AD] leading-relaxed">
-                          {item.desc}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
+            ))}
           </div>
 
-          {/* Right Column: A PAZ EM DEUS */}
-          <div className="rounded-[32px] p-8 sm:p-10 border border-[#D9AD62]/35 bg-gradient-to-b from-[#161820] to-[#111318] shadow-[0_15px_40px_rgba(217,173,98,0.08)] relative overflow-hidden">
-            {/* Top ambient gold glow */}
-            <div className="absolute top-0 right-0 w-56 h-56 bg-[#D9AD62]/15 rounded-full blur-[90px] pointer-events-none" />
-
-            <div className="relative z-10">
-              <div className="flex items-center justify-between gap-4 mb-6 pb-2">
-                <div>
-                  <span className="text-[11px] font-semibold tracking-[0.2em] uppercase text-[#D9AD62] block mb-1">
-                    Atmosfera Luminosa & Firme
-                  </span>
-                  <h3 className="font-editorial text-2xl sm:text-3xl font-bold text-[#F0C77C]">
-                    A PAZ EM DEUS
-                  </h3>
-                </div>
-                <div className="p-3 rounded-2xl bg-[#08090B] border border-[#D9AD62]/40 text-[#D9AD62]">
-                  <CheckCircle2 className="w-6 h-6 text-[#D9AD62]" />
-                </div>
-              </div>
-
-              <p className="text-sm text-[#F7F4EF]/80 leading-relaxed mb-8">
-                Um descanso firme gerado pela submissão à verdade e pela convicção
-                profunda de que nada escapa ao governo de Deus.
-              </p>
-
-              <div className="space-y-6">
-                {CONTRASTS.godPeace.map((item, idx) => (
-                  <div
-                    key={idx}
-                    className="p-5 rounded-2xl bg-[#08090B]/80 border border-[#D9AD62]/20 hover:border-[#D9AD62]/50 transition-colors shadow-sm"
-                  >
-                    <div className="flex items-start gap-3">
-                      <span className="text-[#D9AD62] mt-1 shrink-0 font-bold text-sm">
-                        ✓
-                      </span>
-                      <div>
-                        <h4 className="text-base font-semibold text-[#F7F4EF] mb-1">
-                          {item.title}
-                        </h4>
-                        <p className="text-sm text-[#A5A7AD] leading-relaxed">
-                          {item.desc}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
+          {/* Reassurance footer inside the card */}
+          <div className="mt-10 pt-6 border-t border-[#191B21] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#A5A7AD]/80">
+            <div className="flex items-center gap-2">
+              <CheckCircle2 className="w-4 h-4 text-[#D9AD62]" />
+              <span>Estudo bíblico digital completo com acesso vitalício</span>
             </div>
+            <span className="font-mono text-[#D9AD62] font-semibold">Liberado Imediatamente</span>
           </div>
 
         </div>

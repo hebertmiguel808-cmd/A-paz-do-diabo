@@ -78,3 +78,129 @@
   animation-play-state: paused;
 }
 
+/* 3D Tactile Buttons */
+.btn-3d-gold {
+  position: relative;
+  background: linear-gradient(180deg, #FDE8B5 0%, #E5A823 45%, #C28715 100%);
+  color: #08090B;
+  box-shadow: 
+    inset 0 1px 1.5px rgba(255, 255, 255, 0.8),
+    0 5px 0 #7A530C,
+    0 12px 25px rgba(217, 173, 98, 0.4);
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(0);
+}
+
+.btn-3d-gold:hover {
+  transform: translateY(-2px);
+  box-shadow: 
+    inset 0 1px 2px rgba(255, 255, 255, 0.9),
+    0 7px 0 #7A530C,
+    0 16px 35px rgba(229, 168, 35, 0.55);
+}
+
+.btn-3d-gold:active {
+  transform: translateY(4px);
+  box-shadow: 
+    inset 0 1px 1px rgba(0, 0, 0, 0.2),
+    0 1px 0 #7A530C,
+    0 4px 12px rgba(217, 173, 98, 0.3);
+}
+
+/* Floating ambient orbs */
+@keyframes float-slow {
+  0%, 100% {
+    transform: translateY(0) translateX(0) scale(1);
+  }
+  33% {
+    transform: translateY(-30px) translateX(20px) scale(1.05);
+  }
+  66% {
+    transform: translateY(20px) translateX(-25px) scale(0.95);
+  }
+}
+
+@keyframes float-reverse {
+  0%, 100% {
+    transform: translateY(0) translateX(0) scale(1);
+  }
+  33% {
+    transform: translateY(25px) translateX(-20px) scale(0.96);
+  }
+  66% {
+    transform: translateY(-25px) translateX(30px) scale(1.04);
+  }
+}
+
+@keyframes particle-drift {
+  0% {
+    transform: translateY(105vh) translateX(0);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.85;
+  }
+  85% {
+    opacity: 0.85;
+  }
+  100% {
+    transform: translateY(-10vh) translateX(35px);
+    opacity: 0;
+  }
+}
+
+.animate-float-slow {
+  animation: float-slow 18s ease-in-out infinite;
+}
+
+.animate-float-reverse {
+  animation: float-reverse 22s ease-in-out infinite;
+}
+
+/* Fire & Sparks Animations */
+@keyframes fire-glow-pulse {
+  0% {
+    transform: scale(0.95) translateY(0);
+    opacity: 0.75;
+    filter: blur(50px);
+  }
+  50% {
+    transform: scale(1.08) translateY(-8px);
+    opacity: 0.95;
+    filter: blur(65px);
+  }
+  100% {
+    transform: scale(0.97) translateY(-3px);
+    opacity: 0.8;
+    filter: blur(55px);
+  }
+}
+
+@keyframes spark-rise {
+  0% {
+    transform: translateY(20px) translateX(0) scale(0.6);
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateY(-240px) translateX(var(--drift, 18px)) scale(0.2);
+    opacity: 0;
+  }
+}
+
+.animate-fire-pulse {
+  animation: fire-glow-pulse 4s ease-in-out infinite alternate;
+}
+
+.animate-spark {
+  animation: spark-rise var(--duration, 3s) cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+  animation-delay: var(--delay, 0s);
+}
+
+
+

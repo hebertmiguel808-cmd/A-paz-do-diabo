@@ -4,7 +4,7 @@ import { CHECKOUT_URL, IMAGES } from "../data";
 
 export const FinalCtaSection: React.FC = () => {
   return (
-    <section className="relative py-28 md:py-40 bg-[#08090B] overflow-hidden flex items-center justify-center text-center">
+    <section className="relative py-28 md:py-40 bg-transparent overflow-hidden flex items-center justify-center text-center">
       {/* Background visual asset: figure walking towards divine light */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         <img
@@ -43,7 +43,7 @@ export const FinalCtaSection: React.FC = () => {
             href={CHECKOUT_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-3 rounded-full bg-gradient-to-r from-[#D9AD62] via-[#F0C77C] to-[#D9AD62] px-10 py-5 text-lg font-bold text-[#08090B] tracking-wide shadow-[0_10px_40px_rgba(217,173,98,0.4)] hover:shadow-[0_15px_50px_rgba(240,199,124,0.6)] hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 group"
+            className="inline-flex items-center justify-center gap-3 rounded-full btn-3d-gold px-10 py-5 text-lg font-black tracking-wide text-[#08090B] group cursor-pointer"
           >
             <span>QUERO COMEÇAR MINHA LEITURA</span>
             <ArrowRight className="w-5 h-5 transition-transform duration-200 group-hover:translate-x-1" />

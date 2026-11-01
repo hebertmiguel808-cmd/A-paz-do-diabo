@@ -179,8 +179,8 @@ export const BONUSES: BonusItem[] = [
     title: "Com Cristo Nunca Mais Eu Pequei em Paz",
     description:
       "A luta contra o pecado, as quedas silenciosas e o peso de uma consciência despertada por Cristo.",
-    originalPrice: "R$12,00",
-    freePrice: "R$0,00",
+    originalPrice: "R$ 12,00",
+    freePrice: "R$ 0,00",
     image: "/images/bonus_1_cover.png",
   },
   {
@@ -189,39 +189,39 @@ export const BONUSES: BonusItem[] = [
     title: "Por Onde Começar a Ler a Bíblia",
     description:
       "Receba um card prático para saber por onde começar e como ler todos os livros da Bíblia em 1 ano.",
-    originalPrice: "R$5,00",
-    freePrice: "R$0,00",
+    originalPrice: "R$ 14,90",
+    freePrice: "R$ 0,00",
     image: "/images/bonus_2_cover.png",
   },
   {
     id: "bonus-3",
     number: "03",
-    title: "O Silêncio de Deus & As Batalhas Secretas",
+    title: "Estudo da Bíblia Sagrada — Questões Bíblicas",
     description:
-      "Como orar e perseverar quando as emoções calam, o silêncio de Deus pesa e a alma clama por discernimento.",
-    originalPrice: "R$15,00",
-    freePrice: "R$0,00",
-    image: "/images/bonus_3_cover.png",
+      "Teste e fortaleça seu conhecimento bíblico com várias questões objetivas sobre a Palavra de Deus.",
+    originalPrice: "R$ 19,90",
+    freePrice: "R$ 0,00",
+    image: "/images/bonus_3.jpg",
   },
   {
     id: "bonus-4",
     number: "04",
-    title: "7 Dias Para Desarmar a Falsa Paz",
+    title: "Onde Tenho Colocado Minha Segurança?",
     description:
-      "Um plano devocional reflexivo para confrontar os enganos do coração e reancorar sua mente na Palavra.",
-    originalPrice: "R$10,00",
-    freePrice: "R$0,00",
-    image: "/images/bonus_4_cover.png",
+      "Com perguntas de reflexão, referências bíblicas e espaço para anotações, cada folha ajuda você a relacionar a Palavra com situações reais: a necessidade de aprovação, o desejo de controle, a comparação e tantos outros desafios do coração.",
+    originalPrice: "R$ 24,90",
+    freePrice: "R$ 0,00",
+    image: "/images/bonus_4.jpg",
   },
   {
     id: "bonus-5",
     number: "05",
-    title: "Caderno de Autoexame & Discernimento Espiritual",
+    title: "O Jornal de Jesus — 31 Edições Ilustradas",
     description:
-      "Perguntas guiadas à luz das Escrituras para examinar suas motivações secretas e edificar a verdadeira paz.",
-    originalPrice: "R$8,00",
-    freePrice: "R$0,00",
-    image: "/images/bonus_5_cover.png",
+      "Coleção com 31 edições ilustradas para ensinar, evangelizar e compartilhar a Palavra de Deus. Pode se usar no culto, célula ou para evangelizar nas ruas!",
+    originalPrice: "R$ 19,90",
+    freePrice: "R$ 0,00",
+    image: "/images/bonus_5.jpg",
   },
 ];
 

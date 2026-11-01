@@ -8,7 +8,7 @@ export const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="bg-[#08090B] py-16 text-xs text-[#A5A7AD]/70">
+    <footer className="bg-transparent py-16 text-xs text-[#A5A7AD]/70">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8 pb-10">
           
